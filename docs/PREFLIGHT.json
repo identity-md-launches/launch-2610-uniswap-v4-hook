@@ -1,0 +1,62 @@
+{
+  "status": "RED",
+  "scope": "Read-only probes; not deployment, fork simulation, LP funding, or a swap",
+  "observedAtUtc": "2026-10-27T08:41:41.024506+00:00",
+  "rpc": "https://rpc.mainnet.chain.robinhood.com",
+  "transactionsSent": 0,
+  "deployment": {
+    "hookAddress": null,
+    "transactionHash": null
+  },
+  "poolA": {
+    "address": null,
+    "poolId": null,
+    "status": "not located"
+  },
+  "poolB": {
+    "address": null,
+    "poolId": null,
+    "status": "not created"
+  },
+  "lp": {
+    "status": "not added",
+    "transactionHash": null
+  },
+  "testSwap": {
+    "transactionHash": null,
+    "decodedEvent": null,
+    "status": "not performed"
+  },
+  "reasons": [
+    "Mandatory signed mainnet pre-flight steps have not been performed.",
+    "ETH address has no deployed code at the recorded block.",
+    "No pool endpoint is verified to accept the four-byte-only 0xc815641c payload. That selector is getSlot0(bytes32) in standard v4 StateView; the argument cannot be guessed."
+  ],
+  "contracts": {
+    "poolManager": {
+      "address": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+      "codeBytes": 24009,
+      "codeSha256": "6eb21c69298b064e37fcf8089a941ae096fe08c0f179b2d399567aef1b10585b"
+    },
+    "SIPHON": {
+      "address": "0x60013a6f087cb84b3c28129dac9a568e94d2b384",
+      "codeBytes": 2205,
+      "codeSha256": "eb48427d075d62a502a749ea5df6f197b3b5d4b57e4254400b30ad2ac9a77ca7",
+      "symbolResponse": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045349504800000000000000000000000000000000000000000000000000000000",
+      "symbol": "SIPH",
+      "decimalsResponse": "0x0000000000000000000000000000000000000000000000000000000000000012",
+      "decimals": 18
+    },
+    "ETH": {
+      "address": "0xD34a99Bc0f67aE1bbd63C660e6d0b0dd03E263B7",
+      "codeBytes": 0,
+      "codeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symbolResponse": "0x",
+      "symbol": null,
+      "decimalsResponse": "0x",
+      "decimals": null
+    }
+  },
+  "chainId": 4663,
+  "rpcBlockNumber": "0x5e856d3"
+}
